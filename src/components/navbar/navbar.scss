@@ -1,0 +1,37 @@
+@import "../../utils/mixin";
+@import "../../utils/vars";
+
+.nav {
+  display: flex;
+  border-top: 3px solid $base-color;
+  @include flex-center;
+  width: 100%;
+  &__links {
+    display: flex;
+    flex-direction: row;
+    @include flex-center;
+    padding: 0;
+    margin: 10px 0;
+    column-gap: 22px;
+  }
+
+  &__item {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    :hover {
+      opacity: 0.3;
+    }
+  }
+}
+
+#off {
+  opacity: 0.3;
+  cursor: default;
+}

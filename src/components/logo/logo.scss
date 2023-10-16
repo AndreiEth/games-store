@@ -1,0 +1,17 @@
+@import "../../utils/vars";
+
+.logo {
+  color: $base-color;
+  text-shadow: -1px 1px 0px $base-color-second;
+  font-size: 64.364px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 84px;
+  span {
+    text-shadow: -1px 1px 0px $base-color;
+    color: $base-color-second;
+  }
+}

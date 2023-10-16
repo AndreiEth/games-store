@@ -1,0 +1,33 @@
+@import "/src/utils/vars";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Smooch Sans", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $background-color-main;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+input,
+input::placeholder {
+  font-family: "Smooch Sans";
+}
+
+button,
+a {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+}

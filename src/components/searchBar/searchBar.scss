@@ -1,0 +1,55 @@
+@import "../../utils/mixin";
+
+.search-bar {
+  width: 755px;
+  display: flex;
+  flex-direction: row;
+  @include flex-center;
+  justify-content: space-between;
+  margin-right: 32px;
+
+  &__container {
+    max-width: 626px;
+    padding: 12px 20px;
+    border: 3px solid #ff1f7d;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+      width: 500px;
+      outline: none;
+      color: #fff;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+    h3 {
+      color: #fff;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      opacity: 0.6;
+      margin: 0;
+	  cursor: default;
+    }
+  }
+  &__button {
+    background-image: url(../../images/search.svg);
+    background-repeat: no-repeat;
+    border: none;
+    width: 39px;
+    height: 39px;
+    background-color: transparent;
+    :hover {
+      opacity: 0.3;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../utils/mixin";
+@import "../../utils/vars";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  border-bottom: 3px solid $base-color;
+  @include flex-center;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    @include flex-center;
+    height: 100px;
+  }
+  &__burger {
+    border: none;
+    background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	row-gap: 14px;
+	padding: 0;
+	
+    div {
+      width: 54px;
+      border: 2px solid $base-color-second;
+    }
+	:nth-child(2){
+		border: 2px solid $base-color;
+	}
+  }
+}
