@@ -1,0 +1,83 @@
+@import "../../../utils/vars";
+@import "../../../utils/mixin";
+
+.swiper {
+  max-width: 100%;
+  display: flex;
+  @include flex-center;
+}
+
+.swiper-slide {
+  display: flex !important;
+  flex-direction: column;
+  @include flex-center;
+}
+.carusel {
+  position: relative;
+  &__title {
+    color: $text-color;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+  }
+  &__description {
+    color: $text-color;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    max-width: 1000px;
+    margin: 10px 0 60px;
+  }
+  &__buttons {
+    display: flex;
+    column-gap: 200px;
+  }
+}
+
+.flex-btn {
+  display: flex;
+  @include flex-center;
+}
+
+.button-next-slide {
+  position: absolute;
+  background-color: transparent;
+  background-image: url(../../../images/nextEl-btn.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid $base-color-second;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  cursor: pointer;
+  top: 46%;
+  right: 10%;
+  transition: opacity 0.3s ease-in;
+  :hover {
+    opacity: 0.3;
+  }
+}
+
+.button-prev-slide {
+  position: absolute;
+  background-color: transparent;
+  background-image: url(../../../images/nextEl-btn.svg);
+  background-position: center;
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  border: 3px solid $base-color-second;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  cursor: pointer;
+  top: 46%;
+  left: 10%;
+  transition: opacity 0.3s ease-in;
+  :hover::after {
+    opacity: 0.1;
+  }
+}

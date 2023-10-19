@@ -1,0 +1,13 @@
+@import "../../utils/mixin";
+
+.home {
+  background-image: url(../../images/main-pic.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  @include flex-center;
+
+  
+}

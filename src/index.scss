@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Smooch Sans", "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
@@ -21,7 +22,8 @@ h3,
 p,
 a,
 input,
-input::placeholder {
+input::placeholder,
+button {
   font-family: "Smooch Sans";
 }
 
@@ -29,5 +31,4 @@ button,
 a {
   cursor: pointer;
   transition: 0.3s ease-in-out;
-
 }

@@ -1,0 +1,31 @@
+@import "../../../utils/vars";
+
+.button {
+  color: $base-color;
+  text-align: center;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  border: 3px solid $base-color;
+  background: rgba(0, 181, 238, 0.14);
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.button-2 {
+  color: $base-color-second;
+  border: 3px solid $base-color-second;
+  background: rgba(255, 31, 125, 0.1);
+  text-align: center;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+}

@@ -1,4 +1,4 @@
-@import "../../utils/mixin";
+@import "../../../utils/mixin";
 
 .search-bar {
   width: 755px;
@@ -42,7 +42,7 @@
     }
   }
   &__button {
-    background-image: url(../../images/search.svg);
+    background-image: url(../../../images/search.svg);
     background-repeat: no-repeat;
     border: none;
     width: 39px;

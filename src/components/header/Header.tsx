@@ -1,6 +1,6 @@
-import Logo from "../logo/Logo"
-import Navbar from "../navbar/Navbar"
-import SearchBar from "../searchBar/SearchBar"
+import Logo from "../common/logo/Logo"
+import Navbar from "../common/navbar/Navbar"
+import SearchBar from "../common/searchBar/SearchBar"
 import "./header.scss"
 
 export default function Header() {
