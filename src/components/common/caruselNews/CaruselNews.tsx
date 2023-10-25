@@ -1,5 +1,5 @@
 import "./caruselNews.scss";
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -11,15 +11,16 @@ export default function CaruselNews() {
 		<>
 			<Swiper
 				className="news-carusel swiper2"
-				modules={[Navigation, Autoplay]}
+				modules={[Navigation, Autoplay, A11y]}
+				direction={'horizontal'}
 				spaceBetween={30}
 				slidesPerView={3}
 				navigation={{
 					nextEl: ".button-next-slide2",
 					prevEl: ".button-prev-slide2",
 				}}
-				autoplay={{ delay: 2000, stopOnLastSlide: false, disableOnInteraction: false }}
 				loop={true}
+				autoplay={{ delay: 2000, stopOnLastSlide: false, disableOnInteraction: false }}
 				speed={600}
 			>
 				{CARUSEL__NEWS.map((item, index) => {
