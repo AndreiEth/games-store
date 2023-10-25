@@ -5,12 +5,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
-import { CaruselItems } from "../../../utils/CaruselItems";
+import { CARUSEL_ITEMS } from "../../../utils/conts";
 
 export default function Carusel() {
 	return (
 		<Swiper
-			className="carusel"
+			className="carusel swiper1"
 			modules={[Navigation, Autoplay]}
 			spaceBetween={50}
 			slidesPerView={1}
@@ -18,12 +18,13 @@ export default function Carusel() {
 				nextEl: ".button-next-slide",
 				prevEl: ".button-prev-slide",
 			}}
-			autoplay={true}
+			autoplay={{ delay: 2000, stopOnLastSlide: false, disableOnInteraction: false }}
 			loop={true}
+			speed={600}
 		>
-			{CaruselItems.map((item, index) => {
+			{CARUSEL_ITEMS.map((item, index) => {
 				return (
-					<SwiperSlide key={index}>
+					<SwiperSlide className="swiper-slide1" key={index}>
 						<h1 className="carusel__title">{item.title}</h1>
 						<p className="carusel__description">{item.description}</p>
 						<div className="carusel__buttons">

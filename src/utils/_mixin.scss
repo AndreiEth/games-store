@@ -1,4 +1,14 @@
-@mixin flex-center{
-	align-items: center;
-	justify-content: center;
+@mixin flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin ellipse {
+  position: relative;
+  height: 338px;
+  width: 351px;
+  border-radius: 351px;
+  opacity: 0.67;
+  filter: blur(250px);
+  z-index: 2;
 }
