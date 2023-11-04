@@ -2,7 +2,7 @@
 @import "../../utils/vars";
 
 .home {
-  &__carusel {
+  .carusel {
     background-image: url(../../images/main-pic.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,31 +13,137 @@
     z-index: 3;
   }
 
-  &__blog {
+  .blog {
     height: 750px;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 3;
-  }
-  &__blog-container {
-    margin-top: 60px;
-    width: auto;
-    z-index: 3;
-    position: relative;
-  }
-  &__blog-title {
-    color: $base-color-second;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin: 0 0 40px;
-    span {
-      color: $text-color;
+
+    &__container {
+      margin-top: 60px;
+      width: auto;
+      z-index: 3;
+      position: relative;
     }
-    #span-news {
-      color: $base-color !important;
+    &__title {
+      color: $base-color-second;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0 0 40px;
+      span {
+        color: $text-color;
+      }
+      #span-news {
+        color: $base-color !important;
+      }
+    }
+  }
+
+  .subscribe {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    @include flex-center;
+
+    &__title {
+      color: $text-color;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      opacity: 0.3;
+      margin: 0 0 10px;
+    }
+
+    &__logo {
+      color: $base-color;
+      text-shadow: -1px 1px 0px $base-color-second;
+      font-size: 80.239px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      text-decoration: none;
+      span {
+        text-shadow: -1px 1px 0px $base-color;
+        color: $base-color-second;
+      }
+    }
+
+    &__btn-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__img {
+      width: 39px;
+      height: 39.477px;
+    }
+    &__btn {
+      color: $base-color-second;
+      text-align: center;
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      border: 0.852px solid $base-color-second;
+      background: rgba(255, 31, 125, 0.1);
+      padding: 5px 38px;
+    }
+  }
+
+  .catalog {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    @include flex-center;
+	margin-bottom: 180px;
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      width: 1200px;
+	  margin-bottom: 40px;
+    }
+
+    &__title {
+      color: $base-color;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+      span {
+        color: #fff;
+      }
+    }
+
+    &__button {
+      background: $base-color-second;
+      color: $text-color;
+      text-align: center;
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      cursor: pointer;
+      width: 309px;
+      text-decoration: none;
+    }
+
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 40px;
     }
   }
 }

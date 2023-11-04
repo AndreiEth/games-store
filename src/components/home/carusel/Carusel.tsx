@@ -1,4 +1,4 @@
-import Button from "../button/Button";
+import Button from "../../common/button/Button";
 import "./carusel.scss";
 import { Navigation, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
