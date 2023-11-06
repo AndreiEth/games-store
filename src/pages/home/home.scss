@@ -101,7 +101,7 @@
     display: flex;
     flex-direction: column;
     @include flex-center;
-	margin-bottom: 180px;
+    margin-bottom: 180px;
 
     &__container {
       display: flex;
@@ -110,7 +110,7 @@
       justify-content: space-between;
       height: 70px;
       width: 1200px;
-	  margin-bottom: 40px;
+      margin-bottom: 40px;
     }
 
     &__title {
@@ -144,6 +144,97 @@
       grid-template-rows: repeat(3, 1fr);
       grid-column-gap: 30px;
       grid-row-gap: 40px;
+    }
+  }
+  .home-form {
+    display: flex;
+
+    @include flex-center;
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      width: 1200px;
+    }
+
+    &__title {
+      color: $base-color-second;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin: 0 0 60px;
+      span {
+        color: $base-color;
+      }
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+
+      input {
+        border: 1.425px solid $base-color-second;
+        background: rgba(255, 31, 125, 0.1);
+        height: 70px;
+        padding: 7.125px 14.25px;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: $text-color;
+
+        &::placeholder {
+          color: rgba(255, 31, 125, 0.3);
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+
+      textarea {
+        border: 1.425px solid $base-color-second;
+        background: rgba(255, 31, 125, 0.1);
+        font-family: "Smooch Sans";
+        height: 70px;
+        padding: 7.125px 14.25px;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: $text-color;
+        height: 260px;
+        resize: none;
+
+        &::placeholder {
+          color: rgba(255, 31, 125, 0.3);
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+
+      button {
+        margin-top: 10px;
+        border: 3.206px solid $base-color-second;
+        background: $base-color-second;
+        color: $text-color;
+        text-align: center;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 0;
+        width: 586px;
+        height: 70px;
+      }
+    }
+
+    &__image {
+      margin-left: 156px;
     }
   }
 }
