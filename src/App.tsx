@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Aboutus from "./pages/aboutus/Aboutus";
 import Catalog from "./pages/catalog/Catalog";
 import Home from "./pages/home/Home";
+import Footer from "./components/footer/Footer";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 				<Route path='/catalog'
 					element={<Catalog />}></Route>
 			</Routes>
+			<Footer/>
 		</div>
 	)
 }

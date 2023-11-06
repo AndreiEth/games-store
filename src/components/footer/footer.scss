@@ -1,0 +1,137 @@
+@import "../../utils/mixin";
+@import "../../utils/vars";
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  height: 130px;
+  border-top: 3px solid $base-color;
+  margin-bottom: 30px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__div1 {
+    margin-right: 69px;
+  }
+
+  &__logo {
+    color: $base-color;
+    text-shadow: -1px 1px 0px $base-color-second;
+    font-size: 37.45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 7px;
+    span {
+      text-shadow: -1px 1px 0px $base-color;
+      color: $base-color-second;
+    }
+  }
+  &__logo-text1 {
+    color: $text-color;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0 0 18.5px;
+  }
+
+  &__logo-text2 {
+    color: $text-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin: 0;
+  }
+
+  &__div2 {
+    margin-right: 60px;
+    h2 {
+      color: $text-color;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 18px */
+      text-transform: uppercase;
+      margin: 0 0 10px;
+    }
+    ul {
+      text-decoration: none;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+
+      li {
+        color: $text-color;
+        font-family: "Smooch Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 18px */
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      li:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__div3 {
+    margin-right: 467px;
+    ul {
+      text-decoration: none;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+
+      li {
+        color: $text-color;
+        font-family: "Smooch Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 18px */
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      li:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__div4 {
+    ul {
+      text-decoration: none;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+
+      li {
+        color: $text-color;
+        font-family: "Smooch Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 18px */
+        text-transform: uppercase;
+        margin-bottom: 10px;
+		text-align: end;
+      }
+      li:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

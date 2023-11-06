@@ -148,8 +148,8 @@
   }
   .home-form {
     display: flex;
-
     @include flex-center;
+	margin-bottom: 90px;
 
     &__container {
       display: flex;
