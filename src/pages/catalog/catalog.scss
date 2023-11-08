@@ -1,0 +1,76 @@
+@import "../../utils/mixin";
+@import "../../utils/vars";
+
+.popular-games {
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  @include flex-center;
+
+  &__sort-container {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+	margin-bottom: 40px;
+    h1 {
+      color: $base-color;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+      width: 540px;
+      margin: 0;
+      span {
+        color: $text-color;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__filter-btn {
+    color: $base-color-second;
+    text-align: center;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: 0.947px solid $base-color-second;
+    background: rgba(255, 31, 125, 0.04);
+    width: 230px;
+    height: 69px;
+    margin-right: 25px;
+    img {
+      margin-left: 20px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+  &__btn {
+    color: $base-color;
+    text-align: center;
+
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: 0.947px solid $base-color;
+    background: #184845;
+    width: 187px;
+    height: 69px;
+  }
+
+  &__catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+  }
+}

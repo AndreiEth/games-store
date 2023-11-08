@@ -36,7 +36,7 @@ export default function Home() {
 					<button className="catalog__button">View&nbsp;catalog</button>
 				</div>
 				<div className="catalog__cards">
-					<GameCard />
+					<GameCard cards={9}/>
 				</div>
 			</section>
 

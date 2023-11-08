@@ -1,12 +1,12 @@
 @import "../../../utils/mixin";
 
 .search-bar {
-  width: 755px;
+  width: 745px;
   display: flex;
   flex-direction: row;
   @include flex-center;
   justify-content: space-between;
-  margin-right: 32px;
+  margin-right: 28px;
 
   &__container {
     max-width: 626px;

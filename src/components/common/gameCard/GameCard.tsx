@@ -1,11 +1,15 @@
 import "./gameCard.scss"
 import { GAME__CARDS } from "../../../utils/conts"
 
-export default function GameCard() {
+interface GameCardprops {
+	cards: number;
+}
+
+export default function GameCard(props: GameCardprops) {
 	return (
 		<>
 			{
-				GAME__CARDS.slice(0, 9).map((item, index) => {
+				GAME__CARDS.slice(0,props.cards).map((item, index) => {
 					return (
 						<div className="card" key={index}>
 							<img src={item.link} alt="game" className="card__img" />
