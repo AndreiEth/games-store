@@ -2,7 +2,7 @@
 @import "../../utils/vars";
 
 .popular-games {
-  margin-top: 110px;
+  margin: 110px 0 60px;
   display: flex;
   flex-direction: column;
   @include flex-center;
@@ -13,7 +13,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-	margin-bottom: 40px;
+    margin-bottom: 40px;
     h1 {
       color: $base-color;
       font-size: 64px;
@@ -72,5 +72,34 @@
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 40px;
+  }
+}
+
+.pre-orders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+  margin-bottom: 390px;
+  height: 750px;
+
+  &__container {
+    z-index: 3;
+	width: auto;
+    position: relative;
+  }
+  &__title {
+    color: $base-color-second;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 40px;
+    span {
+      color: $text-color;
+    }
+    #span-news {
+      color: $base-color !important;
+    }
   }
 }

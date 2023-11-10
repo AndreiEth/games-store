@@ -1,0 +1,92 @@
+@import "../../../utils/mixin";
+@import "../../../utils/vars";
+
+.pre-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 380px;
+  &__img {
+    width: 380px;
+    height: 250px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    row-gap: 10px;
+  }
+  &__genre {
+    color: $text-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 0.67;
+    margin: 0;
+    span {
+      color: $base-color-second;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+  &__title {
+    color: $text-color;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+  }
+  &__description {
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.6;
+    margin: 0;
+  }
+  &__price {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+  }
+  &__btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    padding: 0 15px 15px;
+  }
+  &__btn-details {
+    color: $base-color;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 0.852px solid $base-color;
+    background: rgba(0, 181, 238, 0.14);
+    width: 120px;
+    height: 40px;
+  }
+  &__btn-buy {
+    color: $base-color-second;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 0.852px solid $base-color-second;
+    background: rgba(255, 31, 125, 0.04);
+    width: 120px;
+    height: 40px;
+  }
+}
