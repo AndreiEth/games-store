@@ -5,8 +5,14 @@ import Droid from "../../images/droid-subscribe.svg";
 import CaruselNews from "../../components/home/caruselNews/CaruselNews";
 import GameCard from "../../components/common/gameCard/GameCard";
 import Robot from "../../images/form-robot.svg";
+import { gameCards } from "../../types/game-card";
 
-export default function Home() {
+interface Homeprops {
+	cards: gameCards;
+}
+
+export default function Home(props: Homeprops) {
+	const { cards } = props;
 	return (
 		<div className="home">
 
@@ -36,7 +42,9 @@ export default function Home() {
 					<button className="catalog__button">View&nbsp;catalog</button>
 				</div>
 				<div className="catalog__cards">
-					<GameCard cards={9}/>
+					{
+						cards.slice(0, 9).map((card) => <GameCard key={card.id} card={card} />)
+					}
 				</div>
 			</section>
 
@@ -45,7 +53,7 @@ export default function Home() {
 					<div className="home-form__form-container">
 						<h2 className="home-form__title">REQUEST <span>A</span> FREE <span>CONSULTATION</span></h2>
 						<form action="submit" className="home-form__form">
-							<input type="text" id="name" placeholder="Your name" required/>
+							<input type="text" id="name" placeholder="Your name" required />
 							<input type="emal" id="email" placeholder="Your E-Mail" required />
 							<textarea id="message" placeholder="Message"></textarea>
 							<button className="home-form__btn" type="submit">Send</button>

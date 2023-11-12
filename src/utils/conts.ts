@@ -85,6 +85,7 @@ export const GAME__CARDS: gameCards = [
     description:
       "Horizon Zero Dawn is a 2017 action role-playing game developed by Guerrilla Games and published by Sony Interactive Entertainment. The plot follows Aloy, a young hunter in a world overrun by machines, who sets out to uncover her past.",
     price: "$75.00",
+    id: 1,
   },
   {
     link: "../../../images/game-card.png",
@@ -93,6 +94,7 @@ export const GAME__CARDS: gameCards = [
     description:
       "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably. ",
     price: "$60.00",
+    id: 2,
   },
   {
     link: "../../../images/game-card.png",
@@ -101,6 +103,7 @@ export const GAME__CARDS: gameCards = [
     description:
       "The game is the eighth installment in the God of War series, the eighth chronologically, and the sequel to 2010's God of War III. Unlike previous games, which were loosely based on Greek mythology, this installment is loosely inspired by Norse mythology, with the majority of it...",
     price: "$65.00",
+    id: 3,
   },
   {
     link: "../../../images/game-card.png",
@@ -109,6 +112,7 @@ export const GAME__CARDS: gameCards = [
     description:
       "Horizon Zero Dawn is a 2017 action role-playing game developed by Guerrilla Games and published by Sony Interactive Entertainment. The plot follows Aloy, a young hunter in a world overrun by machines, who sets out to uncover her past.",
     price: "$75.00",
+    id: 4,
   },
   {
     link: "../../../images/game-card.png",
@@ -117,6 +121,7 @@ export const GAME__CARDS: gameCards = [
     description:
       "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably. ",
     price: "$60.00",
+    id: 5,
   },
   {
     link: "../../../images/game-card.png",
@@ -125,6 +130,7 @@ export const GAME__CARDS: gameCards = [
     description:
       "The game is the eighth installment in the God of War series, the eighth chronologically, and the sequel to 2010's God of War III. Unlike previous games, which were loosely based on Greek mythology, this installment is loosely inspired by Norse mythology, with the majority of it...",
     price: "$65.00",
+    id: 6,
   },
   {
     link: "../../../images/game-card.png",
@@ -133,6 +139,7 @@ export const GAME__CARDS: gameCards = [
     description:
       "Horizon Zero Dawn is a 2017 action role-playing game developed by Guerrilla Games and published by Sony Interactive Entertainment. The plot follows Aloy, a young hunter in a world overrun by machines, who sets out to uncover her past.",
     price: "$75.00",
+    id: 7,
   },
   {
     link: "../../../images/game-card.png",
@@ -141,6 +148,7 @@ export const GAME__CARDS: gameCards = [
     description:
       "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably. ",
     price: "$60.00",
+    id: 8,
   },
   {
     link: "../../../images/game-card.png",
@@ -149,6 +157,7 @@ export const GAME__CARDS: gameCards = [
     description:
       "The game is the eighth installment in the God of War series, the eighth chronologically, and the sequel to 2010's God of War III. Unlike previous games, which were loosely based on Greek mythology, this installment is loosely inspired by Norse mythology, with the majority of it...",
     price: "$65.00",
+    id: 9,
   },
   {
     link: "../../../images/game-card.png",
@@ -157,6 +166,7 @@ export const GAME__CARDS: gameCards = [
     description:
       "Horizon Zero Dawn is a 2017 action role-playing game developed by Guerrilla Games and published by Sony Interactive Entertainment. The plot follows Aloy, a young hunter in a world overrun by machines, who sets out to uncover her past.",
     price: "$75.00",
+    id: 10,
   },
   {
     link: "../../../images/game-card.png",
@@ -165,6 +175,7 @@ export const GAME__CARDS: gameCards = [
     description:
       "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably. ",
     price: "$60.00",
+    id: 11,
   },
   {
     link: "../../../images/game-card.png",
@@ -173,6 +184,7 @@ export const GAME__CARDS: gameCards = [
     description:
       "The game is the eighth installment in the God of War series, the eighth chronologically, and the sequel to 2010's God of War III. Unlike previous games, which were loosely based on Greek mythology, this installment is loosely inspired by Norse mythology, with the majority of it...",
     price: "$65.00",
+    id: 12,
   },
   {
     link: "../../../images/game-card.png",
@@ -181,6 +193,7 @@ export const GAME__CARDS: gameCards = [
     description:
       "Horizon Zero Dawn is a 2017 action role-playing game developed by Guerrilla Games and published by Sony Interactive Entertainment. The plot follows Aloy, a young hunter in a world overrun by machines, who sets out to uncover her past.",
     price: "$75.00",
+    id: 13,
   },
   {
     link: "../../../images/game-card.png",
@@ -189,6 +202,7 @@ export const GAME__CARDS: gameCards = [
     description:
       "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably. ",
     price: "$60.00",
+    id: 14,
   },
   {
     link: "../../../images/game-card.png",
@@ -197,5 +211,6 @@ export const GAME__CARDS: gameCards = [
     description:
       "The game is the eighth installment in the God of War series, the eighth chronologically, and the sequel to 2010's God of War III. Unlike previous games, which were loosely based on Greek mythology, this installment is loosely inspired by Norse mythology, with the majority of it...",
     price: "$65.00",
+    id: 15,
   },
 ]

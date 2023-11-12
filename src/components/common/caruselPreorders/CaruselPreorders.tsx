@@ -5,8 +5,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
+import GameCard from "../gameCard/GameCard";
+import { gameCards } from "../../../types/game-card";
 
-export default function CaruselPreorders() {
+interface Caruselprops {
+	cards: gameCards;
+}
+
+export default function CaruselPreorders(props: Caruselprops) {
+	const { cards } = props;
 	return (
 		<>
 			<Swiper
@@ -23,24 +30,14 @@ export default function CaruselPreorders() {
 				autoplay={{ delay: 2000, stopOnLastSlide: false, disableOnInteraction: false }}
 				speed={600}
 			>
-				{GAME__CARDS.map((item, index) => {
+				{cards.map((card) => {
 					return (
-						<SwiperSlide className="swiper-slide2" key={index}>
-							<img src={item.link} alt="game" className="pre-order__img" />
-							<div className="pre-order__container">
-								<p className="pre-order__genre"><span>Genre:</span> {item.genre}</p>
-								<h2 className="pre-order__title">{item.title}</h2>
-								<p className="pre-order__description">{item.description}</p>
-								<p className="pre-order__price">{item.price}</p>
-							</div>
-							<div className="pre-order__btn-container">
-								<button className="pre-order__btn-details">Details</button>
-								<button className="pre-order__btn-buy">Buy Now</button>
-							</div>
-
+						<SwiperSlide className="swiper-slide2">
+							<GameCard key={card.id} card={card} />
 						</SwiperSlide>
-					);
-				})}
+					)
+				})
+				}
 			</Swiper>
 			<div className="button-prev-slide2"></div>
 			<div className="button-next-slide2"></div>

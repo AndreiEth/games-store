@@ -6,4 +6,7 @@ export type gameCard = {
   title: string
   description: string
   price: string
+  id:CardId;
 }
+
+export type CardId = number;

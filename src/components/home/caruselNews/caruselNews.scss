@@ -13,7 +13,7 @@
   flex-direction: column;
   background-color: $background-color-main;
   color: $text-color;
-  height: 470px;
+  height: min-content;
   max-width: 380px;
 }
 .news-carusel {

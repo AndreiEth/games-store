@@ -66,17 +66,22 @@
     padding: 0 15px 15px;
   }
   &__btn-details {
+    border: 0.852px solid $base-color;
+    background: rgba(0, 181, 238, 0.14);
+    width: 120px;
+    height: 40px;
+  }
+
+  &__link-details {
+    text-decoration: none;
     color: $base-color;
     text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    border: 0.852px solid $base-color;
-    background: rgba(0, 181, 238, 0.14);
-    width: 120px;
-    height: 40px;
   }
+
   &__btn-buy {
     color: $base-color-second;
     text-align: center;

@@ -1,9 +1,16 @@
 import CaruselPreorders from "../../components/common/caruselPreorders/CaruselPreorders";
 import GameCard from "../../components/common/gameCard/GameCard";
 import ArrowDown from "../../images/filter-btn.svg";
+import { gameCards } from "../../types/game-card";
 import "./catalog.scss";
+import { GAME__CARDS } from "../../utils/conts";
 
-export default function Catalog() {
+interface Catalogprops {
+	cards: gameCards;
+}
+
+export default function Catalog(props: Catalogprops) {
+	const { cards } = props;
 	return (
 		<>
 			<section className="popular-games">
@@ -15,15 +22,17 @@ export default function Catalog() {
 					</div>
 				</div>
 				<div className="popular-games__catalog">
-					<GameCard cards={15} />
+					{
+						cards.map((card) => <GameCard key={card.id} card={card} />)
+					}
 				</div>
 
 			</section>
-			
+
 			<section className="pre-orders">
 				<div className="pre-orders__container">
 					<h2 className="pre-orders__title">Pre <span>-</span> <span id="span-news">ORDERS</span></h2>
-					<CaruselPreorders />
+					<CaruselPreorders cards={GAME__CARDS}/>
 				</div>
 			</section>
 		</>
